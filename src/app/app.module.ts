@@ -11,11 +11,13 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { FirebaseServiceProvider } from '../providers/firebase-service/firebase-service';
+import { SavePage } from '../pages/save/save';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
+    SavePage,
     ListPage
   ],
   imports: [
@@ -36,6 +38,7 @@ import { FirebaseServiceProvider } from '../providers/firebase-service/firebase-
   entryComponents: [
     MyApp,
     HomePage,
+    SavePage,
     ListPage
   ],
   providers: [

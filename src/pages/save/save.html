@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>Cadastro de Curso</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-list>
+    <ion-item>
+      <ion-label fixed>Title</ion-label>
+      <ion-input type="text" [(ngModel)]="course.title"></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label fixed>Preço</ion-label>
+        <ion-input type="text" [(ngModel)]="course.price"></ion-input>
+      </ion-item>
+
+    <ion-item>
+        <ion-label fixed>Descrição</ion-label>
+        <ion-input type="text" [(ngModel)]="course.description"></ion-input>
+      </ion-item>
+  </ion-list>
+
+  <button ion-button full (click)="save(course)">Cadastrar</button>
+
+</ion-content>
